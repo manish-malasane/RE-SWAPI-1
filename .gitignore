@@ -1,0 +1,11 @@
+*.txt
+*.log
+.idea
+venv
+*__pyc__
+*__pycache__/
+*.yml
+*.toml
+*.pyc
+
+
