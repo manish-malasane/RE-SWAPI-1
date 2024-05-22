@@ -16,3 +16,4 @@ def mylogger(func):
             logging.error(f"There are some issues while fetching the code")
 
     return wrapper
+
