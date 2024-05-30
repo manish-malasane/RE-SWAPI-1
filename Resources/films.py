@@ -19,9 +19,11 @@ class Film(ResourceBase):
         url = self.home_url + self.relative_url
         response = fetch_data(url)
         result = response.get("results")
-        while i < len(result):
-            urls.append(result[i]["url"])
-            i += 1
+        # while i < len(result):
+        #     urls.append(result[i]["url"])
+        #     i += 1
+        for i in result:
+            urls.append((i.get("url")))
         return urls
 
     def get_random_data(self, resource_id):
