@@ -259,11 +259,11 @@ def store_film():
 
 @deco
 def final_call():
-    # store_char()
-    # store_planets()
-    # store_starship()
-    # store_vehicle()
-    # store_species()
+    store_char()
+    store_planets()
+    store_starship()
+    store_vehicle()
+    store_species()
     store_film()
 
 
