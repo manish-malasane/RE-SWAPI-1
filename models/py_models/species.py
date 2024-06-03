@@ -6,7 +6,7 @@ pydantic.error_wrappers.ValidationError
 """
 
 from models.datamodel import DataModel
-from typing import List, Optional
+from typing import List, Optional, Union
 
 
 class Species(DataModel):
@@ -16,7 +16,7 @@ class Species(DataModel):
     designation: str
     eye_colors: str
     hair_colors: str
-    homeworld: str
+    homeworld: Union[str | None]
     language: str
     name: str
     skin_colors: str
